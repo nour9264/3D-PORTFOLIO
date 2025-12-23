@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { socialImgs } from "../constants";
 
 const Footer = () => {
@@ -16,12 +17,12 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={socialImg.imgPath} alt={socialImg.name + " icon"} />
+              <Image src={socialImg.imgPath} alt={socialImg.name + " icon"} width={24} height={24} />
             </a>
           ))}
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -108,7 +109,7 @@ const Experience = () => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
                     <div>
-                      <img src={card.imgPath} alt="exp-img" />
+                      <Image src={card.imgPath} alt="exp-img" width={400} height={300} />
                     </div>
                   </GlowCard>
                 </div>
@@ -120,7 +121,7 @@ const Experience = () => {
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
+                        <Image src={card.logoPath} alt="logo" width={80} height={80} />
                       </div>
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>

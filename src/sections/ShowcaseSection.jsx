@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -51,7 +52,7 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <Image src="/images/project1.png" alt="Ryde App Interface" width={800} height={600} />
             </div>
             <div className="text-content">
               <h2>
@@ -68,9 +69,11 @@ const AppShowcase = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
-                <img
+                <Image
                   src="/images/globalLINK.png"
                   alt="GLOBAL LiNK"
+                  width={600}
+                  height={400}
                 />
               </div>
               <h2>GLOBAL LINK</h2>
@@ -78,7 +81,7 @@ const AppShowcase = () => {
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <Image src="/images/project3.png" alt="YC Directory App" width={600} height={400} />
               </div>
               <h2>YC Directory - A Startup Showcase App</h2>
             </div>

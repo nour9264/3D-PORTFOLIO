@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 
 const GlowCard = ({ card, index, children }) => {
@@ -37,7 +38,7 @@ const GlowCard = ({ card, index, children }) => {
       <div className="glow"></div>
       <div className="flex items-center gap-1 mb-5">
         {Array.from({ length: 5 }, (_, i) => (
-          <img key={i} src="/images/star.png" alt="star" className="size-5" />
+          <Image key={i} src="/images/star.png" alt="star" width={20} height={20} className="size-5" />
         ))}
       </div>
       <div className="mb-5">

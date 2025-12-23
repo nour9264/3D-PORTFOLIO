@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -20,7 +21,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
+        <Image src="/images/bg.png" alt="Background decoration" width={1920} height={1080} priority />
       </div>
 
       <div className="hero-layout">
@@ -37,9 +38,11 @@ const Hero = () => {
                         key={index}
                         className="flex items-center md:gap-3 gap-1 pb-2"
                       >
-                        <img
+                        <Image
                           src={word.imgPath}
                           alt="person"
+                          width={48}
+                          height={48}
                           className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                         />
                         <span>{word.text}</span>
