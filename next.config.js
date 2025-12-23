@@ -5,9 +5,10 @@ const nextConfig = {
     reactStrictMode: true,
 
     // Configure image optimization
+    // Temporarily disabled to fix deployment build error
     images: {
         remotePatterns: [],
-        unoptimized: false,
+        unoptimized: true, // Disable image optimization temporarily
     },
 
     // Webpack configuration for Three.js and GSAP
