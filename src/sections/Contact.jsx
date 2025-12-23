@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from "../emailjsConfig";
