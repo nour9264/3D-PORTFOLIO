@@ -2,17 +2,18 @@
 
 import dynamic from "next/dynamic";
 import Navbar from "../src/components/NavBar";
-import Hero from "../src/sections/Hero";
 import ShowcaseSection from "../src/sections/ShowcaseSection";
 import LogoShowcase from "../src/sections/LogoShowcase";
 import FeatureCards from "../src/sections/FeatureCards";
-import TechStack from "../src/sections/TechStack";
-import Contact from "../src/sections/Contact";
+import Experience from "../src/sections/Experience";
+import Testimonials from "../src/sections/Testimonials";
 import Footer from "../src/sections/Footer";
 
-// Lazy load below-the-fold sections to reduce initial bundle size
-const Experience = dynamic(() => import("../src/sections/Experience"));
-const Testimonials = dynamic(() => import("../src/sections/Testimonials"));
+// Dynamic imports with ssr: false for components containing 3D models
+// This prevents SSR errors during build
+const Hero = dynamic(() => import("../src/sections/Hero"), { ssr: false });
+const TechStack = dynamic(() => import("../src/sections/TechStack"), { ssr: false });
+const Contact = dynamic(() => import("../src/sections/Contact"), { ssr: false });
 
 export default function Home() {
     return (
