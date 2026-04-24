@@ -248,24 +248,6 @@ const testimonials = [
   },
 ];
 
-const socialImgs = [
-  {
-    name: "insta",
-    imgPath: "/images/insta.png",
-    link: "https://www.instagram.com/nour_9264_/"
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-    link: "https://www.facebook.com/nour.mostafa.50999405"
-  },
-  {
-    name: "linkedin",
-    imgPath: "/images/linkedin.png",
-    link: "https://www.linkedin.com/in/nour-soliman-7846b325b/"
-  },
-];
-
 export {
   words,
   abilities,

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { socialImgs } from "../constants";
 
 const Footer = () => {
   return (
