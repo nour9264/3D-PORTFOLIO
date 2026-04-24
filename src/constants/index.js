@@ -256,7 +256,6 @@ export {
   expCards,
   expLogos,
   testimonials,
-  socialImgs,
   techStackIcons,
   techStackImgs,
   navLinks,
